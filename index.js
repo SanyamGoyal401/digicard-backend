@@ -13,7 +13,7 @@ const businessRoutes = require('./routes/business');
 const userRoutes = require('./routes/user');
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://e-digicards.vercel.app/',
     credentials: true  // This enables credentials in the CORS request
 }));
 
