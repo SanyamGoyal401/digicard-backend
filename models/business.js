@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
 const businessSchema = new mongoose.Schema({
+    template: {
+        type: Number,
+        required: true,
+    },
     route: {
         type: String,
         required: true,
@@ -10,7 +14,23 @@ const businessSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    businessNameColor: {
+        type: String,
+        required: true,
+    },
+    businessPhotoBackground: {
+        type: String,
+        required: true,
+    },
     ownerName: {
+        type: String,
+        required: true,
+    },
+    ownerNameColor: {
+        type: String,
+        required: true,
+    },
+    detailCardBorder: {
         type: String,
         required: true,
     },
@@ -34,7 +54,23 @@ const businessSchema = new mongoose.Schema({
         type: String,
         default: null
     },
+    website: {
+        type: String,
+        default: null
+    },
+    contactCardColor: {
+        type: String,
+        default: null
+    },
     aboutUs: {
+        type: String,
+        default: null
+    },
+    aboutUsColor: {
+        type: String, 
+        default: null
+    },
+    aboutUsHeadingColor: {
         type: String,
         default: null
     },
